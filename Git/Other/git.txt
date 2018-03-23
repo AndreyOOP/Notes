@@ -1,0 +1,60 @@
+2.2 Git Basics - Recording Changes to the Repository
+
+base: Figure 8. The lifecycle of the status of your files.
+base: git add <path> > adds untracked or modified files to staging area; add precisely this content to the next commit
+if git add "a.txt" then modify a.txt & git status show file as staged to commit & modified
+
+note: git status -s | --short
+note: .gitignore patterns like *.[oa] > Git to ignore any files ending in “.o” or “.a”, etc
+note: !lib.a - will be tracked even if *.a ignored
+
+question: patterns to note
+
+note: git diff
+git diff --staged
+
+question: to setup visual tool
+
+base: about what have to be included into commit from presentation
+
+note: git commit -a
+
+question git add - flags, git add with patch mode tool to use ?
+
+note: git rm > stages file removal
+git rm --cached to remove from stage but keep on working tree
+
+base: git mv - use for movement or renaming
+
+
+note:git log --pretty=format
+git log --graph
+git log --oneline
+
+note: options to limit log output > to add
+
+note: git commit --amend - if just forgot to add something
+
+base: git reset
+git reset HEAD <file> > to unstage changed file
+what is reset ?
+
+base: HEAD is the pointer to the current branch reference, which is in turn a pointer to the last commit made on that branch
+It’s generally simplest to think of HEAD as the snapshot of your last commit on that branch
+
+base: The Index/Staging Area is your proposed next commit
+The Working Directory > Think of the Working Directory as a sandbox, where you can try changes out before committing them to your staging area (index) and then to history.
+base: the workflow picture
+base: about HEAD^ and HEAD~ https://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git
+reset > 1 Move the branch HEAD points to <required commit> (stop here if --soft)
+2 Make the Index look like HEAD (stop here unless --hard) if no paramters stops here, same as --mixed
+3 Make the Working Directory look like the Index (--hard option)
+
+in case of git reset [pointer] <file> -> skips first step, and move file from [pointer] to index
+
+git checkout <pointer> > move HEAD & replace index and working directory with pointer data but it do not move branch itself
+git checkout <pointer> [path] > copy file from <pointer> to index & working directory it is like git reset --hard <pointer> [file] > but git do not allow such reset
+
+git reset, add, checkout > could have --patch flag
+note: summary
+note: about reset & checkout https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified#_git_reset

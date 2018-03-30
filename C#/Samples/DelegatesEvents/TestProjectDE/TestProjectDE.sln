@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesDE", "TestProjectDE\DelegatesDE.csproj", "{7332667A-20D7-41F4-908F-363A3FD3F953}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events", "Events\Events.csproj", "{79343C4E-C02F-4F24-9226-D9B7F4F6FD11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RihterEvent", "RihterEvent\RihterEvent.csproj", "{6E6E4CF6-E453-41E2-94E5-56885A6D84CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7332667A-20D7-41F4-908F-363A3FD3F953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7332667A-20D7-41F4-908F-363A3FD3F953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7332667A-20D7-41F4-908F-363A3FD3F953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7332667A-20D7-41F4-908F-363A3FD3F953}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79343C4E-C02F-4F24-9226-D9B7F4F6FD11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79343C4E-C02F-4F24-9226-D9B7F4F6FD11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79343C4E-C02F-4F24-9226-D9B7F4F6FD11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79343C4E-C02F-4F24-9226-D9B7F4F6FD11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E6E4CF6-E453-41E2-94E5-56885A6D84CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E6E4CF6-E453-41E2-94E5-56885A6D84CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E6E4CF6-E453-41E2-94E5-56885A6D84CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E6E4CF6-E453-41E2-94E5-56885A6D84CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A17A3E6D-3032-4FCF-B960-3365900582CA}
+	EndGlobalSection
+EndGlobal

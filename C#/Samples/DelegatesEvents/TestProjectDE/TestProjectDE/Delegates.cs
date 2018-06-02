@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using static TestProjectDE.Delegates;
+using System.Windows.Forms;
 
 namespace TestProjectDE
 {
@@ -56,6 +57,12 @@ namespace TestProjectDE
             Action<OutClassA> act = Act;
             act(new OutClassA()); //same situation with Action is ok
             act(new OutClassB());
+        }
+
+        [TestMethod, Ignore]
+        public void MB()
+        {
+            MessageBox.Show("Hello!");
         }
 
         public static int Square2(int i)
